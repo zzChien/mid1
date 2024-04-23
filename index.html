@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picture Gallary</title>
+    <style>
+        /* 標題置中 */
+        .title{
+            text-align: center;
+            color: aliceblue;
+        }
+        /* 彈性容器設定 */
+        .flex-container {
+            display: block;
+            flex-wrap: wrap;
+            /*align-items: center;*/
+            text-align: center;
+        }
+        /* 圖片樣式 */
+        .img{
+            width: 300px;
+            height: 200px;
+            object-fit: fill;
+        }
+        /* 圖片懸停效果 */
+        .img:hover{
+            transform: scale(120%);
+            /* 漸變效果 */
+            transition: ease-in-out;
+            opacity: 0.5;
+        }
+        /* 背景設定 */
+        .back{
+            background-color: rgb(57,57,57);
+        }
+    </style>
+</head>
+<body class="back">
+<h1 class="title">響應式照片藝廊網頁</h1>
+<div class="flex-container" >
+    <img class="img" src=".imgs/1.jpg" width="33%">
+    <img class="img" src=".imgs/a0000276_main.webp" width="33%">
+    <img class="img" src=".imgs/3.jpg" width="33%">
+    <img class="img" src=".imgs/4.jpg" width="33%">
+    <img class="img" src=".imgs/5.jpg" width="33%">
+    <img class="img" src=".imgs/6.jpg" width="33%">
+    <img class="img" src=".imgs/7.jpg" width="33%">
+    <img class="img" src=".imgs/8.jpg" width="33%">
+    <img class="img" src=".imgs/9.jpg" width="33%">
+    <img class="img" src=".imgs/10.jpg" width="33%">
+    <img class="img" src=".imgs/11.jpg" width="33%">
+    <img class="img" src=".imgs/12.jpg" width="33%">
+</div>
+</body>
+</html>
